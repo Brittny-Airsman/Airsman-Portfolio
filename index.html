@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Brittny Airsman | Systems & Strategy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: #0b0b0d;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    a { color: #f26b8a; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      padding: 3rem 1.5rem;
+      text-align: center;
+      background: radial-gradient(circle at top, #2a2235 0, #050509 55%);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+    h1, h2, h3 {
+      font-weight: 650;
+      letter-spacing: 0.03em;
+    }
+    h1 { font-size: 2.4rem; margin-bottom: 0.4rem; }
+    h2 { font-size: 1.6rem; margin-top: 2.5rem; border-bottom: 1px solid #333; padding-bottom: 0.4rem; }
+    h3 { font-size: 1.1rem; margin-top: 1.4rem; }
+    .tagline {
+      font-size: 1rem;
+      color: #ccccd5;
+      max-width: 650px;
+      margin: 0.5rem auto 1.5rem;
+    }
+    .pill-row {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .pill {
+      border-radius: 999px;
+      border: 1px solid #444;
+      padding: 0.45rem 1rem;
+      font-size: 0.85rem;
+    }
+    .btn-row {
+      margin-top: 1.8rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      border: 1px solid #f26b8a;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .btn.primary {
+      background: #f26b8a;
+      color: #0b0b0d;
+      font-weight: 600;
+    }
+    section {
+      margin-top: 2rem;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 2rem;
+    }
+    @media (max-width: 800px) {
+      .two-col { grid-template-columns: 1fr; }
+      header { padding: 2.5rem 1.25rem; }
+    }
+    .card {
+      background: rgba(255,255,255,0.02);
+      border-radius: 0.75rem;
+      border: 1px solid #252525;
+      padding: 1rem 1.2rem;
+      margin-top: 1rem;
+    }
+    .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #a2a2b8;
+    }
+    ul {
+      margin: 0.3rem 0 0.3rem 1.2rem;
+      padding: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: #77778a;
+      border-top: 1px solid #1b1b22;
+      background: #050509;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Brittny Airsman</h1>
+    <p class="tagline">
+      Systems-focused problem solver blending IT, AI, and property operations.
+      I design and manage workflows that connect the digital and physical world.
+    </p>
+    <div class="pill-row">
+      <div class="pill">IT & Systems Design</div>
+      <div class="pill">LLM & AI Integration (in progress)</div>
+      <div class="pill">Property & Operations Management</div>
+      <div class="pill">Emergency & Field Experience</div>
+    </div>
+    <div class="btn-row">
+      <a class="btn primary" href="#projects">View Projects</a>
+      <a class="btn" href="#contact">Contact</a>
+      <!-- Later: add link to resume PDF -->
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <div class="two-col">
+        <div>
+          <p>
+            I’m a hybrid operator: part IT specialist, part systems architect in training,
+            part hands-on fixer. Over the last 15+ years I’ve worked across funeral home
+            operations, animal welfare, emergency medicine, property management, and
+            small business systems.
+          </p>
+          <p>
+            I’m currently formalizing my work into a clear path toward LLM systems
+            engineering, combining cloud, Python, automation, and AI integration with
+            everything I’ve learned from managing real-world operations.
+          </p>
+        </div>
+        <div>
+          <div class="card">
+            <div class="label">Current Focus</div>
+            <ul>
+              <li>Designing AI-assisted workflows for property management</li>
+              <li>Building a portfolio of LLM & automation projects</li>
+              <li>Completing BSIT/MSITM through WGU</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects & Case Studies</h2>
+
+      <div class="card">
+        <h3>AI-Powered Property Management Assistant (in progress)</h3>
+        <p>
+          Concept for a multi-agent assistant that triages maintenance requests,
+          supports tenant screening, drafts documentation, and helps keep rentals
+          inspection-ready.
+        </p>
+        <p class="label">Skills:</p>
+        <ul>
+          <li>LLM workflow design & reasoning</li>
+          <li>Data and schema planning</li>
+          <li>Property operations knowledge</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Expert-Mode Learning Engine (in progress)</h3>
+        <p>
+          A system that turns any topic into a structured research guide and
+          practice path, combining AI generation with curated resources.
+        </p>
+        <p class="label">Skills:</p>
+        <ul>
+          <li>Instructional design</li>
+          <li>AI integration planning</li>
+          <li>Information architecture</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Rapid Turnover Maintenance Protocol – Little Buddy Home Repair</h3>
+        <p>
+          Standardized inspection and repair workflows for rental turnovers,
+          reducing time between tenants and improving unit consistency.
+        </p>
+        <p class="label">Skills:</p>
+        <ul>
+          <li>Process design & documentation</li>
+          <li>Property management</li>
+          <li>Hands-on maintenance</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Legacy Archive Modernization – Airsman & Hires Funeral Homes</h3>
+        <p>
+          Helped migrate records and internal documents into digital formats and
+          more structured storage, improving searchability and continuity.
+        </p>
+        <p class="label">Skills:</p>
+        <ul>
+          <li>IT systems & basic server management</li>
+          <li>Data organization</li>
+          <li>Business operations support</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Behavioral Rehabilitation Tracking – Chillicothe Animal Shelter</h3>
+        <p>
+          Tracking and documenting behavior plans for difficult dogs using AKC CGC
+          standards to improve rehabilitation and adoption outcomes.
+        </p>
+        <p class="label">Skills:</p>
+        <ul>
+          <li>Behavioral systems & training design</li>
+          <li>Documentation & evaluation</li>
+          <li>Cross-team communication</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="two-col">
+        <div>
+          <h3>Technical & AI</h3>
+          <ul>
+            <li>Python, Linux, Git/GitHub, SQL</li>
+            <li>Web development & hosting basics</li>
+            <li>Cloud fundamentals (AWS/Azure)</li>
+            <li>LLM & AI integration concepts</li>
+          </ul>
+
+          <h3>Systems & Operations</h3>
+          <ul>
+            <li>Property & tenant management</li>
+            <li>Workflow & process design</li>
+            <li>Work order and inspection systems</li>
+            <li>Business & operations analysis</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Field & Behavioral</h3>
+          <ul>
+            <li>NREMT & 68W combat medic background</li>
+            <li>Animal handling & CGC training</li>
+            <li>Maintenance, repairs, and inspections</li>
+          </ul>
+
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Customer service & de-escalation</li>
+            <li>Teaching & coaching</li>
+            <li>Working in high-pressure environments</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        I’m open to roles and collaborations involving IT, AI/LLM systems,
+        property operations, and hybrid digital/physical problem solving.
+      </p>
+      <p>
+        <span class="label">Email</span><br />
+        <a href="mailto:youremail@example.com">youremail@example.com</a>
+      </p>
+      <p>
+        <span class="label">Location</span><br />
+        St. Louis, Missouri
+      </p>
+      <p>
+        <!-- Future links: LinkedIn, GitHub -->
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Brittny Airsman
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
