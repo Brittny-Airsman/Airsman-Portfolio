@@ -88,7 +88,7 @@ Link will appear here once published.
 
 ## 📬 Contact
 
-**Email:** yourname@example.com  
+**Email:** bairsman@gmail.com
 **Location:** St. Louis, MO  
 **Portfolio:** coming soon via GitHub Pages
 
