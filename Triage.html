@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maintenance Triage | Airsman Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <h1 class="site-title">Maintenance Triage (MVP)</h1>
+      <p class="site-tagline">
+        Paste a tenant maintenance request. Get priority, actions, and a work order draft.
+      </p>
+      <div class="btn-row">
+        <a class="btn ghost" href="./index.html">Back to Portfolio</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2 class="section-title">Input</h2>
+
+      <div class="card">
+        <label class="label" for="request">Maintenance request</label>
+        <textarea id="request" rows="4" style="width:100%;margin-top:.4rem;padding:.8rem;border-radius:.8rem;border:1px solid #28283a;background:#0b0b12;color:#f5f5f7;"></textarea>
+
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem;">
+          <button class="btn primary" id="triageBtn" type="button">Triage</button>
+          <button class="btn ghost" id="clearBtn" type="button">Clear</button>
+          <button class="btn ghost" id="demoBtn" type="button">Load Demo Examples</button>
+        </div>
+
+        <p class="label" style="margin-top:1rem;">Tip</p>
+        <p style="margin:0;color:#a6a6c0;">
+          This MVP uses deterministic rules (no AI yet). Later we upgrade to Python + LLM + logging.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="outputSection" style="display:none;">
+      <h2 class="section-title">Output</h2>
+
+      <div class="card">
+        <div class="label">Priority</div>
+        <p id="priority" style="font-size:1.1rem;margin:.2rem 0 1rem;"></p>
+
+        <div class="label">Category</div>
+        <p id="category" style="margin:.2rem 0 1rem;"></p>
+
+        <div class="label">Immediate actions</div>
+        <ul id="actions"></ul>
+
+        <div class="label">Safety checks</div>
+        <ul id="safety"></ul>
+
+        <div class="label">Tools / parts (initial)</div>
+        <ul id="tools"></ul>
+
+        <div class="label">Documentation checklist</div>
+        <ul id="docs"></ul>
+
+        <div class="label">Work order draft</div>
+        <pre id="workorder" style="white-space:pre-wrap;background:#07070d;border:1px solid #28283a;border-radius:1rem;padding:1rem;color:#f5f5f7;"></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#top" class="back-to-top">Back to top</a>
+    <span>&copy; <span id="year"></span> Brittny Airsman</span>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/triage.js"></script>
+</body>
+</html>
